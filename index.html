@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario de registro</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet"> <!--Se enlaza la fuente de google fonts-->
+
+</head>
+<body>
+	<div class="contenedor">
+		<form class="formulario" id="formulario" name="formulario">
+			<div class="contenedorInputs"> <!--Se encierra en un contenedor los inputs para luego darle estilos a todos juntos-->
+				<input type="text" name="nombre" placeholder="Nombre"> <!--name se le da para llamarlo con js-->
+				<input type="email" name="correo" placeholder="Correo">
+
+				<div class="sexo">
+					<input type="radio" name="sexo" id="hombre" value="Hombre">
+					<label class="labelRadio hombre" for="hombre">Hombre</label>
+
+					<input type="radio" name="sexo" id="mujer" value="Mujer">
+					<label class="labelRadio mujer" for="mujer">Mujer</label>
+				</div>
+
+				<div class="terminos">
+					<input type="checkbox" name="terminos" id="terminos">
+					<label for="terminos">Acepto Terminos y Condiciones</label>
+				</div>
+
+				<ul class="error" id="error">
+					
+				</ul>
+			</div>
+
+			<input type="submit" class="btn" value="Registrate">
+		</form>
+	</div>
+	<script type="text/javascript" src="formulario.js"></script> <!--Se enlaza nuestro script de JS-->
+</body>
+</html>
